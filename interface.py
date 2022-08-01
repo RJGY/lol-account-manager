@@ -217,6 +217,7 @@ def account_list_logic(window, event, values, accounts):
         clear_account_list(window)
         update_account_list(window, accounts)
     elif event in login_dict:
+        load_dotenv()
         if not os.getenv("LEAGUE_PATH"):
             gui.popup(
                 "The path to league of legends has not been set correctly! Please set it with the button or set it manually in the .env file."

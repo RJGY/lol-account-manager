@@ -6,8 +6,20 @@ You're able to add your accounts and easily display their rank, level and games 
 
 ## Requirements
 * Python 3
+* Pip
 
 ## How to Run
 1. Make a virtual environment (OPTIONAL)
 2. Run the following command to install the required package: "pip install -r requirements.txt"
-3. Run start.bat
+3. Run requirements.bat
+4. Run start.bat
+
+## Releases
+* v2.0.0 - Major bugfix release
+
+## Upcoming features
+* GUI Updates
+* Detect screen is on loading screen.
+* make flashing sign which says that dont touch cause logging in.
+* new logging in system so user can do other things
+* custom delay

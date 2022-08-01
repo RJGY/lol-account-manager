@@ -1,5 +1,3 @@
-from array import typecodes
-from msilib.schema import Error
 import subprocess
 import time
 import database
@@ -90,8 +88,9 @@ class Account:
 
     def login(self):
         load_dotenv()
-        subprocess.call(os.getenv("LEAGUE_PATH"))
-        time.sleep(2)
+        # subprocess.call(os.getenv("LEAGUE_PATH"))
+        subprocess.Popen([os.getenv("LEAGUE_PATH"), "--launch-product=league_of_legends", "--launch-patchline=live", "--allow-multiple-clients"])
+        time.sleep(6)
         keyboard.type(self.username)
         keyboard.press(Key.tab)
         keyboard.release(Key.tab)
